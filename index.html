@@ -21,9 +21,10 @@
 </head>
 
 <body>
+    
     <header data-aos="fade-down" data-aos-duration="1400">
         <div class="img-fondo">
-            <nav class="navbar navbar-expand">
+            <nav class="navbar navbar-expand navbar-blur">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
                         <img src="img/logo-principal.png" width="80" alt="Logo de La Pagina Web">
@@ -46,7 +47,7 @@
             </nav>
         </div>
     </header>
-    
+
     <!--Contenido Principal-->
     <main class="mt-5">
         <section class="contenido-principal">
@@ -207,44 +208,95 @@
                     </div>
                 </div>
                 <div class="col-md-1"></div>
-                <!-- reseñas -->
+                <!-- Reseñas -->
                 <div class="somos-hijo col-md-5 p-3 mb-4">
                     <div class="fondo-titulo">
                         <h3 class="text-center">Reseñas</h3>
                     </div>
                     <div class="somos-reseñas mt-4">
                         <div class="row">
+                            <!-- Reseñas visibles -->
                             <div class="col-md-6 mb-4">
                                 <div class="reseñas">
-                                <p class="text-muted"><em>"excelente alojamiento, súper ordenado y limpio, buena ubicación, zona bonita, la cama y colchón 5 estrellas.
-                                    muy buen afiitrion."</em></p> 
-                                <p class="font-weight-bold text-right">- Argenis Alfredo</p> 
+                                    <p class="text-muted"><em>"Excelente alojamiento, súper ordenado y limpio, buena ubicación, zona bonita, la cama y colchón 5 estrellas. Muy buen anfitrión."</em></p> 
+                                    <p class="font-weight-bold text-right">- Argenis Alfredo</p> 
                                 </div> 
                             </div> 
 
                             <div class="col-md-6 mb-4">
                                 <div class="reseñas">
-                                <p class="text-muted"><em>"Bastante cómodo, es un área con ambiente bastante fresco, la piscina es perfecta, con un centro comercial, cine, supermercado cerca. ¡Me quedaría de nuevo sin duda!"</em></p> 
-                                <p class="font-weight-bold text-right">- Oswaldo</p> 
+                                    <p class="text-muted"><em>"Bastante cómodo, es un área con ambiente bastante fresco, la piscina es perfecta, con un centro comercial, cine, supermercado cerca. ¡Me quedaría de nuevo sin duda!"</em></p> 
+                                    <p class="font-weight-bold text-right">- Oswaldo</p> 
                                 </div> 
                             </div> 
 
                             <div class="col-md-6 mb-4">
                                 <div class="reseñas">
-                                <p class="text-muted"><em>"Todo fue perfecto, tanto el alojamiento como Daniel fue una persona muy servicial"</em></p> 
-                                <p class="font-weight-bold text-right">- Fabrizio</p> 
+                                    <p class="text-muted"><em>"Todo fue perfecto, tanto el alojamiento como Daniel fue una persona muy servicial."</em></p> 
+                                    <p class="font-weight-bold text-right">- Fabrizio</p> 
                                 </div> 
                             </div> 
 
                             <div class="col-md-6 mb-4">
                                 <div class="reseñas">
-                                <p class="text-muted"><em>"Súper!! Volvería siempre! El lugar es súper cómodo, tiene una vista muy bella, buen servicio de internet!"</em></p> 
-                                <p class="font-weight-bold text-right">- María Elisa</p> 
+                                    <p class="text-muted"><em>"Súper!! Volvería siempre! El lugar es súper cómodo, tiene una vista muy bella, buen servicio de internet!"</em></p> 
+                                    <p class="font-weight-bold text-right">- María Elisa</p> 
                                 </div> 
                             </div>
                         </div>
+
+                        <!-- Reseñas ocultas -->
+                        <div id="extra-reseñas" class="d-none">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="reseñas">
+                                        <p class="text-muted"><em>"Excelente alojamiento, muy limpio y ordenado. Lo recomiendo sin dudas."</em></p> 
+                                        <p class="font-weight-bold text-right">- Juan Pérez</p> 
+                                    </div> 
+                                </div> 
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="reseñas">
+                                        <p class="text-muted"><em>"Lugar increíble, muy tranquilo y cómodo. Volveré pronto!"</em></p> 
+                                        <p class="font-weight-bold text-right">- Carolina Fernández</p> 
+                                    </div> 
+                                </div> 
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="reseñas">
+                                        <p class="text-muted"><em>"La piscina es perfecta, ideal para relajarse. Servicio excelente!"</em></p> 
+                                        <p class="font-weight-bold text-right">- José Martínez</p> 
+                                    </div> 
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="reseñas">
+                                        <p class="text-muted"><em>"Todo impecable, el internet funciona excelente y la ubicación es genial."</em></p> 
+                                        <p class="font-weight-bold text-right">- Andrea Gómez</p> 
+                                    </div> 
+                                </div> 
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="reseñas">
+                                        <p class="text-muted"><em>"Me encantó el espacio, muy cómodo y bien equipado."</em></p> 
+                                        <p class="font-weight-bold text-right">- Fernando Ruiz</p> 
+                                    </div> 
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="reseñas">
+                                        <p class="text-muted"><em>"Increíble experiencia, volvería sin pensarlo. Todo perfecto!"</em></p> 
+                                        <p class="font-weight-bold text-right">- Paula Sánchez</p> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón para mostrar más reseñas -->
+                        <button id="ver-mas-btn" class="btn btn-primary mt-3">Leer más reseñas</button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -282,6 +334,24 @@
     <script>
     AOS.init();
     </script>
+    <!--Script de las reseñas-->
+    <script>
+        document.getElementById("ver-mas-btn").addEventListener("click", function() {
+            let extraResenas = document.getElementById("extra-reseñas");
+
+            
+            if (extraResenas.classList.contains("d-none")) {
+                extraResenas.classList.remove("d-none"); 
+                this.textContent = "Leer menos reseñas"; 
+            } else {
+                extraResenas.classList.add("d-none");
+                this.textContent = "Leer más reseñas";
+            }
+        });
+
+    </script>
+
+
 
 
 </body>
