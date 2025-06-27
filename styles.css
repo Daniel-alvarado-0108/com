@@ -1,0 +1,194 @@
+/* estilos generales */
+
+
+/* header */
+
+/* Estilos del Navbar */
+header {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 15px;
+}
+
+.navbar-dark {
+    background: transparent !important; /* Evita que Bootstrap lo oscurezca */
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Menú alineado a la derecha */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de los enlaces */
+.nav-link {
+    color: #111 !important;
+    font-weight: bold !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #0092e1 !important; 
+}
+
+/* menu hamburguesa */
+.navbar-toggler-icon {
+    background-color: rgb(0, 0, 0) !important; 
+    border-radius: 5px;
+    padding: 5px; 
+}
+
+
+/* seccion main */
+
+/* presentacion 1*/
+/* Caja de servicio */
+.service-box {
+    background-color: #0092e1;
+}
+
+/* Imagen */
+.img-fluid {
+    border-radius: 10px; 
+}
+
+/* Texto */
+.titulo-1 {
+    color: #121226;
+    font-weight: bold;
+}
+
+.parrafos-1 {
+    color: #121226;
+    font-size: 1.3rem;
+}
+
+/* boton */
+.btn-1 {
+    font-weight: bold !important;
+}
+
+/* presentacion 2 */
+
+/* Primer div */
+.box-info-1 {
+    background-color: #ffffff; 
+    border: 3px solid #0092e1; 
+    
+}
+
+/* Segundo div  */
+.box-info-2 {
+    background-color: #bababa; 
+    color: #121226; 
+    font-weight: 300;
+}
+
+/* Tercer div */
+.box-info-3 {
+    background-color: #111; 
+}
+
+/* Iconos personalizados */
+.icon-custom {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* seccion asesorias */
+
+.service-box-1 {
+    background-color: white;
+    border: 3px solid #0092e1;
+}
+
+.service-box-2 {
+    background-color: white;
+    border: 3px solid #05a725;
+}
+
+/* seccion brochure */
+
+.brochure-preview-wrapper {
+  perspective: 1000px;
+  transition: transform 0.4s ease;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.brochure-img {
+  width: 100%;
+  border-radius: 12px;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 0.6s ease, box-shadow 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.brochure-preview-wrapper:hover .brochure-img {
+  transform: rotateX(5deg) rotateY(-5deg) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* seccion mi testimonio */
+.carousel-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* footer */
+.enlaces-contact {
+    text-decoration: none;
+}
+
+.enlaces-contact {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.enlaces-contact img {
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enlaces-contact:hover img {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 15px rgba(0, 255, 128, 0.4) !important; 
+}
+
+/* media queries */
+
+@media (max-width: 760px) {
+  .img-1 {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Opcional: hacer que la imagen aparezca sobre el texto (stack en columna) */
+  .service-box .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-box .col-md-5,
+  .service-box .col-md-7 {
+    width: 100%;
+  }
+
+  .titulo-1 {
+    margin-top: 15px;
+  }
+
+  .btn-1 {
+    margin-top: 1rem;
+  }
+}
